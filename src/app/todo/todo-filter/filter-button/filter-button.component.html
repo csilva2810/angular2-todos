@@ -1,0 +1,5 @@
+<button class="btn btn-default" type="button"
+  [class.btn-success]="filter === activeFilter" 
+  (click)="filterClick(filter)">
+  {{ filter }}
+</button>

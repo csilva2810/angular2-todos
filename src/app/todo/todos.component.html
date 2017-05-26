@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>Todo List</h1>
+</div>
+<todo-form (onAddTodo)="addTodo($event)"></todo-form>
+<br>
+<todo-list [todos]="todos" (onToggle)="onToggle($event)"></todo-list>
+<hr>
+<todo-filter (onFilter)="onFilter($event)"></todo-filter>

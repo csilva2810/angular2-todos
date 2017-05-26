@@ -1,0 +1,9 @@
+<form (submit)="onSubmit($event);" autocomplete="off">
+  
+  <div class="todo-form">
+    <input type="text" class="form-control" placeholder="new todo..."
+      [(ngModel)]="todoText" name="todoText">
+    <button class="btn btn-default">Add</button>
+  </div>
+
+</form>

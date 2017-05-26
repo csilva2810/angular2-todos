@@ -3,3 +3,37 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+.list-group > .list-group-item .btn {
+  border: 0;
+  padding: 2px 6px;
+}
+
+.todo-form {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.todo-form:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.todo-form .form-control,
+.todo-form .btn {
+  float: left;
+}
+
+.todo-form .form-control {
+  width: 84%;
+  margin-right: 1%;
+}
+
+.todo-form .btn {
+  width: 15%;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}

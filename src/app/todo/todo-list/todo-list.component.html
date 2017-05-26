@@ -1,0 +1,18 @@
+<ul class="list-group" *ngIf="todos.length">
+  <li class="list-group-item cursor-pointer" 
+    *ngFor="let todo of todos"
+    (click)="onSelect(todo.id)">
+    <span class="label label-info">{{ todo.id }}</span>
+    <span 
+      [class.text-success]="todo.completed" 
+      [style.text-decoration]="todo.completed ? 'line-through' : ''">
+      {{todo.text}}
+    </span>
+    <span class="pull-right">
+      <button class="btn btn-default btn-sm" [class.btn-success]="todo.completed"
+        (click)="$event.stopPropagation(); toggleTodo(todo);">
+        <i class="glyphicon glyphicon-ok"></i>
+      </button>
+    </span>
+  </li>
+</ul>
